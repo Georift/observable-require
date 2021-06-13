@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "ObservableHQ Require Helper",
+  "version": "0.1",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://observablehq.com/*"],
+      "js": ["observable.js"]
+    },
+    {
+      "matches": [
+        "https://georift.static.observableusercontent.com/worker/worker.37fbd02e15fe53414f0d5f37206514c96ce45687366d8c31b8c8ba7bd437d52a.html"
+      ],
+      "js": ["worker.js"],
+      "all_frames": true
+    }
+  ]
+}
