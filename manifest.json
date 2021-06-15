@@ -3,7 +3,7 @@
   "name": "ObservableHQ Require Helper",
   "version": "0.1",
   "background": {
-    "scripts": ["background.js"],
+    "page": "./background.html",
     "persistent": false
   },
   "content_scripts": [

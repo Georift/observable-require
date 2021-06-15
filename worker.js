@@ -1,4 +1,4 @@
-console.log("running on observable worker");
+const enableDebug = false;
 
 const messageHandler = (event) => {
   const messageData = event.data;
@@ -8,7 +8,10 @@ const messageHandler = (event) => {
 
     events
       .filter(({ type }) => type === "modify_node")
-      .forEach(({ node_id, new_node_value }) => {
+      .forEach((m) => {
+        enableDebug && console.log(m);
+        const { node_id, new_node_value } = m;
+
         chrome.runtime.sendMessage({
           type: "modify_node",
           node_id,
