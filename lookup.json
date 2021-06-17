@@ -1,4 +1,5 @@
 {
   "/* notes: */": "This file contains a package name to correct syntax lookup",
-  "date-fns": "import(\"date-fns\")"
+  "date-fns": "import(\"date-fns\")",
+  "pretty-bytes": "(await import('https://cdn.skypack.dev/pretty-bytes')).default"
 }
