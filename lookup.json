@@ -2,5 +2,6 @@
   "/* notes: */": "This file contains a package name to correct syntax lookup",
   "date-fns": "import(\"date-fns\")",
   "pretty-bytes": "(await import('https://cdn.skypack.dev/pretty-bytes')).default",
-  "path": "(await import('https://cdn.skypack.dev/path')).default"
+  "path": "(await import('https://cdn.skypack.dev/path')).default",
+  "@supabase/postgrest-js": "import('https://cdn.skypack.dev/@supabase/postgrest-js@0.34.0?min')"
 }
